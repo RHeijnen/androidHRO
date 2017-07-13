@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.firstapp.helpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/roboto"
+                android:onClick="setViewOverview"
+                android:text="overzicht"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/roboto"
+                android:onClick="setViewCreate"
+                android:text="Vraag om hulp"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/helpViewInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/roboto"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                tools:text="Hieronder vind je alle uitdagingen van studenten. klik op een opdracht voor meer informatie" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/helpList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="0dp">
+
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/createField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Title"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/titleTextValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="@font/roboto"
+                        android:hint="korte titel"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Korte omschrijving"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/activityTextValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Korte omschrijving van je probleem"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="lange omschrijving"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/activityLongTextValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Omschrijving van je probleem"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="deadline"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/activityDeadlineTextValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Deadline"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beloning in punten"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/activityPointValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Hoeveel punten is het je waard"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/contactTextValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="student@hro.nl"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="image flag"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/activityImgValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="js / java / python / csharp / .."
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/colorPrimaryLight" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:onClick="sendReqeust"
+                        android:text="Verstuur"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:id="@+id/dialogLL"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#DA5F6A"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_gravity="right"
+            android:baselineAlignBottom="false"
+            android:foregroundGravity="right"
+            android:tint="@android:color/background_light"
+            app:srcCompat="@drawable/ic_close_black_24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogTitleFood"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:text="1. Broodje kroket voor 2 punten"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dialogTitleFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dialogLL"
+        android:fontFamily="@font/roboto"
+        android:text="Hou je telefoon tegen het betaal apparaat"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/loadicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center"
+        android:layout_marginTop="24dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:tint="@android:color/background_light"
+        app:srcCompat="@drawable/ic_sync_black_24dp" />
+
+</RelativeLayout>

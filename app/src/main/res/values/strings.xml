@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="gradeSection">Laatste cijver</string>
+    <string name="classSection">Aankomende lessen</string>
+    <string name="studySection">Studie punten</string>
+    <string name="pointSection">Huidige punten</string>
+    <string name="stringTest">test</string>
+    <string name="title_activity_rooster">roosterActivity</string>
+</resources>
